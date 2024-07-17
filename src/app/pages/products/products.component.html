@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container">
+  <div class="container__specifications_product" *ngIf="carta; else noData">
+    <div class="specifications_product-img">
+      <img src="{{ carta.imagen }}" alt="producto" />
+    </div>
+    <div class="specifications_product-info">
+      <div class="product-info-title">
+        <h2>{{ carta.nombre }} {{ carta.marca }}</h2>
+      </div>
+      <div class="product-info-description">
+        <p>Instrumento:</p>
+        <span>{{ carta.nombre }}</span>
+        <p>Marca:</p>
+        <span>{{ carta.marca }}</span>
+        <p>Modelo:</p>
+        <span>{{ carta.modelo }}</span>
+        <p>Color:</p>
+        <span>{{ carta.color }}</span>
+      </div>
+      <div class="product-info-price">
+        <p>${{ carta.precio }}</p>
+      </div>
+      <div class="product-info-btn">
+        <button class="btn-add-product" (click)="addCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #noData>
+    <p>Producto no encontrado</p>
+  </ng-template>
+</div>
+<app-footer></app-footer>

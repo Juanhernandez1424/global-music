@@ -1,0 +1,106 @@
+<app-header></app-header>
+<div class="container">
+  <div class="container__info">
+    <div class="container__info-principal">
+      <div class="info-principal-title">
+        <h1>Encuentra los mejores instrumentos para ti!</h1>
+      </div>
+      <div class="info-principal-desc">
+        <p>
+          En Global Music encontrarás los mejores instrumentos para ti, desde
+          guitarras, bajos, baterías y accesorios
+        </p>
+      </div>
+      <div class="info-principal-btns">
+        <div class="btns-compra-ahora">
+          <button
+            type="submit"
+            class="comprar-ahora"
+            id="btn-comprar-ahora"
+            (click)="comprar()"
+          >
+            Compra Ahora
+          </button>
+        </div>
+        <div class="btns-explorar-categorias">
+          <button
+            type="submit"
+            class="explorar-categorias"
+            id="btn-explorar-categorias"
+            (click)="explorarCategorias()"
+          >
+            Explorar Categorías
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container__img-principal">
+      <div class="image-principal-corrusel">
+        <div class="carrusel-item">
+          <img src="../assets/imagenes/jacksonjs32.jpg" alt="imagen 1" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container__productos-destacados">
+    <div class="container__productos-des-info">
+      <div class="productos-destacados-title">
+        <h2>Productos destacados</h2>
+      </div>
+      <div class="productos-destacados-desc">
+        <p>Descubre nuestros productos más populares y en tendencia.</p>
+      </div>
+    </div>
+    <div class="productos-destacados">
+      <div class="productos-destacado">
+        <h4>Guitarra Bc Rich Beast Avenge</h4>
+        <p>Guitarra eléctrica Bc Rich Beast Avenge</p>
+      </div>
+      <div class="productos-destacado">
+        <h4>Guitarra Jackson JS32</h4>
+        <p>Guitarra eléctrica Jackson JS32</p>
+      </div>
+      <div class="productos-destacado">
+        <h4>Bajo Stratocaster</h4>
+        <p>Bajo eléctrico Stratocaster</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container__explorar-categorias">
+    <div class="container__explorar-categorias-info">
+      <div class="explorar-categorias-title">
+        <h2>Explorar Categorías</h2>
+      </div>
+      <div class="explorar-categorias-desc">
+        <p>
+          Encuentra lo que buscas en nuestras amplias categorías de productos.
+        </p>
+      </div>
+    </div>
+    <div class="explorar-categorias-cartas">
+      <div class="carta-categoria">
+        <div class="carta-categoria-img">
+          <img src="../assets/imagenes/bcrich.jpg" alt="imagen 1" />
+        </div>
+        <div class="carta-categoria-img">
+          <img src="../assets/imagenes/bcrich.jpg" alt="imagen 1" />
+        </div>
+        <div class="carta-categoria-img">
+          <img src="../assets/imagenes/bcrich.jpg" alt="imagen 1" />
+        </div>
+        <div class="carta-categoria-img">
+          <img src="../assets/imagenes/bcrich.jpg" alt="imagen 1" />
+        </div>
+        <div class="carta-categoria-img">
+          <img src="../assets/imagenes/bcrich.jpg" alt="imagen 1" />
+        </div>
+        <div class="carta-categoria-img">
+          <img src="../assets/imagenes/bcrich.jpg" alt="imagen 1" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

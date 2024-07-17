@@ -1,0 +1,89 @@
+<app-header></app-header>
+<div class="container">
+  <div class="container__checkout">
+    <div class="checkout-title">
+      <h3>Checkout</h3>
+    </div>
+    <div class="checkout-datos">
+      <div class="datos-form">
+        <div class="form-nombre">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre" />
+        </div>
+        <div class="form-email">
+          <label for="email">Correo</label>
+          <input type="email" name="email" placeholder="Ingresa tu correo" />
+        </div>
+        <div class="form-address">
+          <label for="address">Dirección</label>
+          <textarea
+            type="text"
+            name="address"
+            placeholder="Ingresa tu dirección"
+          ></textarea>
+        </div>
+        <div class="form-payment">
+          <div class="payment-title">
+            <h4>Método de pago</h4>
+          </div>
+          <div class="payment-method">
+            <div class="method-credit-card">
+              <button class="credit-card">
+                <ion-icon name="card-outline"></ion-icon>Credit Card
+              </button>
+            </div>
+            <div class="method-delivery">
+              <button class="delivery-option">
+                <ion-icon name="cash-outline"></ion-icon>Contra Entrega
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="form-payment">
+          <button class="btn-payment" (click)="goToPay()">Pagar</button>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-resumen"></div>
+  </div>
+  <div class="container__summary">
+    <div class="summary-title">
+      <h3>Resumen Compra</h3>
+    </div>
+    <div class="summary-products" #summaryProducts>
+      <div class="product-cart" *ngFor="let product of cart">
+        <div class="product-cart-img">
+          <img [src]="product.imagen" [alt]="product.marca" />
+        </div>
+        <div class="product-cart-resumen">
+          <div class="cart-resumen-title">
+            <h3>
+              {{ product.nombre }} {{ product.marca }} {{ product.modelo }}
+            </h3>
+          </div>
+          <div class="cart-resumen-color">{{ product.color }}</div>
+        </div>
+        <div class="product-cart-precio">
+          <div class="cart-precio-valor">
+            <p>$ {{ product.precio }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="summary-price">
+      <div class="price-subtotal">
+        <p>Subtotal</p>
+        <span>$ {{ subtotal }}</span>
+      </div>
+      <div class="price-iva">
+        <p>Iva</p>
+        <span>$ {{ iva }}</span>
+      </div>
+      <div class="price-total">
+        <p>Total</p>
+        <span>$ {{ total }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

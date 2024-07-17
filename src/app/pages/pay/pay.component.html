@@ -1,0 +1,75 @@
+<app-header></app-header>
+<div class="container">
+  <div class="container__payment-details">
+    <div class="details-card-after">
+      <div class="card-after-type-card">
+        <img
+          src="../assets/imagenes/visa-logo.png"
+          alt="visa-logo"
+          class="visa-logo"
+          #visaLogo
+        />
+        <img
+          src="../assets/imagenes/mastercard-logo.png"
+          alt="mastercard-logo"
+          class="mastercard-logo"
+          #masterCardLogo
+        />
+      </div>
+      <div class="card-after-chip">
+        <img src="../assets/imagenes/chip.png" alt="" />
+      </div>
+      <div class="card-after-number-card">
+        <input type="text" readonly #numberCardAfter />
+      </div>
+      <div class="card-after-expiration-date">
+        <input type="text" value=" / " readonly #dateAfter />
+      </div>
+      <div class="card-after-name-card">
+        <input type="text" readonly #nameCardAfter />
+      </div>
+    </div>
+    <div class="payment-details-card"></div>
+    <div class="payment-details-info-card">
+      <h3>Detalles de pago</h3>
+      <div class="info-card-form">
+        <div class="form-name-card">
+          <label for="name">Nombre en tarjeta</label>
+          <input
+            type="text"
+            name="name"
+            #nameCardBefore
+            (input)="inputNameCard()"
+          />
+        </div>
+        <div class="form-number-card">
+          <label for="number">Número de tarjeta</label>
+          <input
+            type="text"
+            name="number"
+            #numberCardBefore
+            (input)="inputNumberCard()"
+          />
+        </div>
+        <div class="form-date-cvv">
+          <div class="date-cvv-expiration-date">
+            <label for="date">Fecha de expiración</label>
+            <input
+              type="text"
+              name="date"
+              #dateBefore
+              (input)="mostrarFecha()"
+            />
+          </div>
+          <div class="date-cvv-cvv">
+            <label for="cvv">CVV</label>
+            <input type="text" name="cvv" />
+          </div>
+        </div>
+      </div>
+      <div class="info-card-btn-pay">
+        <button type="submit" class="btn-pay">Pagar</button>
+      </div>
+    </div>
+  </div>
+</div>

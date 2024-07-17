@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container">
+  <div class="container__cartas-shop">
+    <div class="cartas">
+      <app-cartas-shop
+        *ngFor="let carta of cartasData; let i = index"
+        (click)="productSpecifications(i)"
+        [carta]="carta"
+      ></app-cartas-shop>
+    </div>
+  </div>
+</div>
+<app-product></app-product>
+<div class="footer">
+  <app-footer></app-footer>
+</div>

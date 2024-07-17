@@ -1,0 +1,229 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 245);
+}
+
+.container__payment-details{
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+}
+
+.payment-details-card{
+    width: 40%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    position: relative;
+}
+
+.details-card-after{
+    width: 35%;
+    height: 40%;
+    background-color: rgb(17, 91, 189);
+    border-radius: 10px;
+    padding: 2%;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 10%;
+    box-shadow: 0px 20px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-after-type-card{
+    display: flex;
+    justify-content: flex-end;
+    height: 30%;
+}
+
+.visa-logo{
+    width: 100px;
+    display: none;
+}
+
+.mastercard-logo{
+    width: 100px;
+    display: none;
+}
+
+.card-after-chip{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-after-chip img{
+    width: 10%;
+}
+
+.card-after-number-card{
+    width: 100%;
+    padding-left: 2%;
+}
+
+.card-after-number-card input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card-after-expiration-date{
+    width: 100%;
+    padding-left: 10%;
+}
+
+.card-after-expiration-date input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.card-after-name-card{
+    width: 100%;
+    padding-left: 2%;
+}
+
+.card-after-name-card input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;   
+}
+
+.payment-details-info-card{
+    width: 60%;
+    height: 100%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.payment-details-info-card h3{
+    font-size: 3rem;
+}
+
+.info-card-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.form-name-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.form-name-card input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    padding-left: 2%;
+    &:focus{
+        border-bottom: 1px solid #000;
+    }
+}
+
+.form-number-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.form-number-card input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    padding-left: 2%;
+    &:focus{
+        border-bottom: 1px solid #000;
+    }
+}
+
+.form-date-cvv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.date-cvv-expiration-date{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 50%;
+}
+
+.date-cvv-expiration-date input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    padding-left: 2%;
+    &:focus{
+        border-bottom: 1px solid #000;
+    }
+}
+
+.date-cvv-cvv{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 50%;
+}
+
+.date-cvv-cvv input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    padding-left: 2%;
+    &:focus{
+        border-bottom: 1px solid #000;
+    }
+}
+
+.info-card-btn-pay{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-pay{
+    width: 70%;
+    height: 60px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}

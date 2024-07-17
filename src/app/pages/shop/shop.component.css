@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container__cartas-shop{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.cartas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    row-gap: 30px;
+}
+
+.footer{
+    margin-top: 50px;
+}

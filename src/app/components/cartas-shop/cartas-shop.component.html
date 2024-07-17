@@ -1,0 +1,18 @@
+<div class="carta">
+  <div class="carta__imagen">
+    <img src="{{ carta.imagen }}" alt="producto" />
+  </div>
+  <div class="carta__contenido">
+    <div class="carta__contenido-info">
+      <h3 class="carta__titulo">
+        {{ carta.nombre }} {{ carta.marca }} {{ carta.modelo }}
+      </h3>
+      <p class="carta__precio">${{ carta.precio }}</p>
+    </div>
+    <div class="carta__contenido-btn">
+      <button class="agregar-producto" id="btn-agregar-producto">
+        Ver más
+      </button>
+    </div>
+  </div>
+</div>
