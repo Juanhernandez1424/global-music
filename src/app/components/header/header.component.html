@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header__logo">
       <a routerLink="/home"
-        ><img src="../assets/imagenes/globalmusic-logo.png" alt="logo"
+        ><img src="../assets/imagenes/page/globalmusic-logo.png" alt="logo"
       /></a>
     </div>
     <div class="header__opciones">
@@ -10,7 +10,7 @@
         <a
           ><ion-icon name="cart-outline" (click)="viewCartShop()"></ion-icon
         ></a>
-        <span>1</span>
+        <span>{{ cart.length }}</span>
       </div>
       <div class="header__nav">
         <nav class="nav">
@@ -18,8 +18,38 @@
             <li class="nav__item">
               <a routerLink="/home" class="nav__link">Home</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item shop">
               <a routerLink="/shop" class="nav__link">Shop</a>
+              <div class="link-shop-categories">
+                <ul class="shop-categories">
+                  <li class="categories-item">
+                    <a
+                      routerLink="/shop"
+                      (click)="filtroTipoInstrumento('cuerdas')"
+                      >Cuerdas</a
+                    >
+                  </li>
+                  <li class="categories-item">
+                    <a
+                      routerLink="/shop"
+                      (click)="filtroTipoInstrumento('percusion')"
+                      >Percusión</a
+                    >
+                  </li>
+                  <li class="categories-item">
+                    <a
+                      routerLink="/shop"
+                      (click)="filtroTipoInstrumento('viento')"
+                      >Viento</a
+                    >
+                  </li>
+                  <li class="categories-item">
+                    <a routerLink="/shop" (click)="filtroTipoInstrumento('all')"
+                      >Ver todos</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav__item"><a href="#" class="nav__link">About</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>

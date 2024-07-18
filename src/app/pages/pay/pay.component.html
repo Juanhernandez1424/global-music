@@ -1,23 +1,23 @@
 <app-header></app-header>
 <div class="container">
   <div class="container__payment-details">
-    <div class="details-card-after">
+    <div class="details-card-after" #cardFront>
       <div class="card-after-type-card">
         <img
-          src="../assets/imagenes/visa-logo.png"
+          src="../assets/imagenes/page/visa-logo.png"
           alt="visa-logo"
           class="visa-logo"
           #visaLogo
         />
         <img
-          src="../assets/imagenes/mastercard-logo.png"
+          src="../assets/imagenes/page/mastercard-logo.png"
           alt="mastercard-logo"
           class="mastercard-logo"
           #masterCardLogo
         />
       </div>
       <div class="card-after-chip">
-        <img src="../assets/imagenes/chip.png" alt="" />
+        <img src="../assets/imagenes/page/chip.png" alt="" />
       </div>
       <div class="card-after-number-card">
         <input type="text" readonly #numberCardAfter />
@@ -29,6 +29,7 @@
         <input type="text" readonly #nameCardAfter />
       </div>
     </div>
+    <div class="details-card-after-back" #cardBack></div>
     <div class="payment-details-card"></div>
     <div class="payment-details-info-card">
       <h3>Detalles de pago</h3>
@@ -63,7 +64,7 @@
           </div>
           <div class="date-cvv-cvv">
             <label for="cvv">CVV</label>
-            <input type="text" name="cvv" />
+            <input type="text" name="cvv" class="input-cvv" #inputCvv />
           </div>
         </div>
       </div>

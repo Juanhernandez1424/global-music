@@ -35,8 +35,23 @@
     position: absolute;
     z-index: 1;
     top: 30%;
-    left: 10%;
-    box-shadow: 0px 20px 10px 5px rgba(0, 0, 0, 0.3);
+    left: 8%;
+    box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+.details-card-after-back{
+    width: 35%;
+    height: 40%;
+    background-color: rgb(17, 91, 189);
+    border-radius: 10px;
+    padding: 2%;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 8%;
+    box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.3);
+    /* backface-visibility: hidden; */
+    display: none;
 }
 
 .card-after-type-card{
@@ -114,7 +129,7 @@
 .payment-details-info-card{
     width: 60%;
     height: 100%;
-    padding: 10%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

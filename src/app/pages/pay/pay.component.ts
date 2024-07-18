@@ -55,4 +55,16 @@ export class PayComponent {
       this.dateAfter.nativeElement.value = this.dateBefore.nativeElement.value;
     }
   }
+
+  @ViewChild('inputCvv') inputCvv!: ElementRef;
+  @ViewChild('cardFront') cardFront!: ElementRef;
+  @ViewChild('cardBack') cardBack!: ElementRef;
+
+  backCard() {
+    this.cardFront.nativeElement.parentElement.classList.add('flipped');
+  }
+
+  frontCard() {
+    this.cardBack.nativeElement.parentElement.classList.remove('flipped');
+  }
 }

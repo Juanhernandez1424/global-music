@@ -51,6 +51,22 @@ ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.header__carrito-compras span{
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    width: 20px;
+    height: 20px;
 }
 
 .header__carrito-compras ion-icon{
@@ -70,9 +86,49 @@ ion-icon{
     right: 0;
     z-index: 1;
     background-color: #fff;
-    /* width: 600px; */
 }
 
 .container__cart-shop.active{
     display: flex;
+}
+
+.link-shop-categories{
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid rgb(179, 179, 179);
+    opacity: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+.shop-categories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-categories li{
+    width: 100%;
+}
+
+.shop-categories li a {
+    width: 100%;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    transition: .2s;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+        transition: .2s;
+    }
+}
+
+.shop:hover .link-shop-categories{
+    opacity: 1;
+    transition: .5s;
 }
