@@ -96,8 +96,10 @@
 }
 
 .card-after-expiration-date{
-    width: 100%;
+    width: 30%;
     padding-left: 10%;
+    display: flex;
+    gap: 5px;
 }
 
 .card-after-expiration-date input{
@@ -106,6 +108,17 @@
     background-color: transparent;
     border: none;
     outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-slash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     color: #fff;
 }
@@ -204,9 +217,22 @@
     border: none;
     border-bottom: 1px solid #a7a7a7;
     padding-left: 2%;
+    display: flex;
     &:focus{
         border-bottom: 1px solid #000;
     }
+}
+
+.expiration-date-input{
+    display: flex;
+    gap: 20px;
+}
+
+.date-input-slash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .date-cvv-cvv{

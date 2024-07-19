@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  constructor(private router: Router) {}
+
   comprar() {
-    window.location.href = '/shop';
+    this.router.navigate(['/shop']);
   }
 
   explorarCategorias() {}

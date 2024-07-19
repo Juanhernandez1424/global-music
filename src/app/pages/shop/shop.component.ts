@@ -151,6 +151,17 @@ export class ShopComponent {
       cantidad: '2',
       instrumento: 'percusion',
     },
+    {
+      imagen: '../assets/imagenes/vientos/conn-as651.jpg',
+      nombre: 'Saxofón',
+      marca: 'Conn',
+      modelo: 'AS651',
+      precio: 1000000,
+      color: 'Dorado',
+      categoria: 'safoxofon',
+      cantidad: '2',
+      instrumento: 'vientos',
+    },
   ];
 
   cartasData = ShopComponent.cartasData;

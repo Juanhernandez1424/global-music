@@ -13,6 +13,7 @@ body{
 
 button{
     font-family: "Rubik", sans-serif;
+    border-radius: 10px;
 }
 
 input{

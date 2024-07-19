@@ -23,7 +23,15 @@
         <input type="text" readonly #numberCardAfter />
       </div>
       <div class="card-after-expiration-date">
-        <input type="text" value=" / " readonly #dateAfter />
+        <div class="expiration-date-month">
+          <input type="text" readonly #dateMonthAfter />
+        </div>
+        <div class="date-slash">
+          <p>/</p>
+        </div>
+        <div class="expiration-date-year">
+          <input type="text" readonly #dateYearAfter />
+        </div>
       </div>
       <div class="card-after-name-card">
         <input type="text" readonly #nameCardAfter />
@@ -41,6 +49,7 @@
             name="name"
             #nameCardBefore
             (input)="inputNameCard()"
+            placeholder="Nombre de Prueba"
           />
         </div>
         <div class="form-number-card">
@@ -50,26 +59,48 @@
             name="number"
             #numberCardBefore
             (input)="inputNumberCard()"
+            placeholder="1234567890123456"
           />
         </div>
         <div class="form-date-cvv">
           <div class="date-cvv-expiration-date">
-            <label for="date">Fecha de expiración</label>
-            <input
-              type="text"
-              name="date"
-              #dateBefore
-              (input)="mostrarFecha()"
-            />
+            <label for="date-month">Fecha de expiración</label>
+            <div class="expiration-date-input">
+              <div class="date-month">
+                <input
+                  type="text"
+                  name="date"
+                  #dateMonthBefore
+                  (input)="inputDateMonth()"
+                  placeholder="Month"
+                />
+              </div>
+              <div class="date-input-slash"><p>/</p></div>
+              <div class="date-year">
+                <input
+                  type="text"
+                  name="date"
+                  #dateYearBefore
+                  (input)="inputDateYear()"
+                  placeholder="Year"
+                />
+              </div>
+            </div>
           </div>
           <div class="date-cvv-cvv">
             <label for="cvv">CVV</label>
-            <input type="text" name="cvv" class="input-cvv" #inputCvv />
+            <input
+              type="text"
+              name="cvv"
+              class="input-cvv"
+              #inputCvv
+              placeholder="123"
+            />
           </div>
         </div>
       </div>
       <div class="info-card-btn-pay">
-        <button type="submit" class="btn-pay">Pagar</button>
+        <button type="submit" class="btn-pay" (click)="pay()">Pagar</button>
       </div>
     </div>
   </div>
