@@ -23,6 +23,7 @@
 .specifications_product-img img{
     width: 50%;
     height: 100%;
+    background-color: aquamarine;
 }
 
 .specifications_product-info{
@@ -68,5 +69,43 @@
     &:hover{
         background-color: rgba(0, 0, 0, 0.9);
         transition: .5s;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container{
+        height: auto;
+    }
+
+    .container__specifications_product{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .specifications_product-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .specifications_product-info{
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .product-info-title{
+        font-size: 1.5rem;
+    }
+
+    .product-info-description{
+        font-size: 1rem;
+    }
+
+    .product-info-btn{
+        justify-content: center;
+    }
+
+    .btn-add-product{
+        width: 80%;
     }
 }

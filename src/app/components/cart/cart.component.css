@@ -54,3 +54,9 @@
     background-color: #000;
     color: #fff;
 }
+
+@media (max-width: 1000px) {
+    .product-cart{
+        width: auto;
+    }
+}

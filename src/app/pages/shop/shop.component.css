@@ -19,3 +19,15 @@
 .footer{
     margin-top: 50px;
 }
+
+@media (max-width: 1200px) {
+    .cartas{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 700px){
+    .cartas{
+        grid-template-columns: 1fr;
+    }
+}

@@ -43,7 +43,6 @@
 }
 
 .form-nombre input{
-    width: 100%;
     height: 50px;
     outline: none;
     border: none;
@@ -61,7 +60,6 @@
 }
 
 .form-email input{
-    width: 100%;
     height: 50px;
     outline: none;
     border: none;
@@ -76,10 +74,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    width: 100%;
 }
 
 .form-address textarea{
-    width: 100%;
     height: 100px;
     outline: none;
     border: 1px solid #a7a7a7;
@@ -203,6 +201,9 @@ ion-icon{
 
 .summary-price span{
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price-subtotal{
@@ -210,6 +211,7 @@ ion-icon{
     display: flex;
     justify-content: space-between;
 }
+
 .price-iva{
     width: 100%;
     display: flex;
@@ -219,4 +221,20 @@ ion-icon{
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+    }
+
+    .container__checkout{
+        width: 100%;
+    }
+
+    .container__summary{
+        width: 100%;
+    }
 }
