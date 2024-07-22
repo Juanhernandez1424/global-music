@@ -9,6 +9,12 @@ import { CartService } from '../../../services/cart.service';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('navBar') navBar!: ElementRef;
+
+  mostrarMenuNav() {
+    this.navBar.nativeElement.classList.toggle('active');
+  }
+
   @ViewChild('cartShop') cartShop!: ElementRef;
 
   viewCartShop() {

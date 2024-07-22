@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .container__info-principal{
     width: 50%;
     height: 100%;
@@ -78,11 +79,12 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    background-color: aqua;
 }
 
 .container__productos-destacados{
     background-color: rgb(244, 244, 245);
-    width: 100vw;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -108,7 +110,7 @@
 }
 
 .container__explorar-categorias{
-    width: 100vw;
+    width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -152,4 +154,84 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    background-color: aqua;
+}
+
+@media (max-width: 1400px) {
+    .container__info{
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        row-gap: 20px;
+    }
+
+    .container__info-principal{
+        width: 100%;
+        padding-left:0%;
+    }
+
+    .container__img-principal{
+        width: 100%;
+    }
+
+    .carrusel-item{
+        width: auto;
+        height: auto;
+    }
+
+    .info-principal-btns{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-principal-btns button{
+        width: 100%;
+    }
+
+    .container__productos-destacados{
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .productos-destacados{
+        width: 100%;
+        height: auto;
+    }
+
+    .container__explorar-categorias{
+        padding: 5%;
+        height: auto;
+    }
+
+    .container__explorar-categorias-info{
+        width: 100%;
+        height: auto;
+        padding-left: 0%;
+    }
+
+    .explorar-categorias-cartas{
+        width: 100%;
+        height: auto;
+        padding-right: 0%;
+    }
+
+    .carta-categoria{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container__explorar-categorias{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:700px){
+    .carta-categoria{
+        grid-template-columns: 1fr;
+    }
 }

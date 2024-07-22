@@ -12,7 +12,10 @@
         ></a>
         <span>{{ cart.length }}</span>
       </div>
-      <div class="header__nav">
+      <div class="header__menu-hamburguesa">
+        <ion-icon name="grid-outline" (click)="mostrarMenuNav()"></ion-icon>
+      </div>
+      <div class="header__nav" #navBar>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
