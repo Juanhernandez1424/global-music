@@ -312,6 +312,14 @@
 }
 
 @media (max-width: 900px){
+    .container__payment-details{
+        width: 100%;
+    }
+
+    .payment-details-info-card h3{
+        font-size: 2rem;
+    }
+
     .details-card-after{
         width: 80%;
         position: static;
