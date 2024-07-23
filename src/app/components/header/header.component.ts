@@ -1,7 +1,7 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ShopComponent } from '../../pages/shop/shop.component';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CartService } from '../../../services/cart.service';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-header',
