@@ -125,7 +125,6 @@
 
 .card-after-name-card{
     width: 100%;
-    padding-left: 2%;
 }
 
 .card-after-name-card input{
@@ -320,6 +319,18 @@
     .form-date-cvv{
         flex-direction: column;
     }
+
+    .card-after-expiration-date{
+        width: 40%;
+    }
+    
+    .card-after-name-card input{
+        font-size: 0.8rem;
+    }
+
+    .date-cvv-expiration-date{
+        width: 70%;
+    }
 }
 
 @media (max-width: 700px){
@@ -342,6 +353,6 @@
     }
 
     .details-card-after{
-        width: 80%;
+        width: 100%;
     }
 }
