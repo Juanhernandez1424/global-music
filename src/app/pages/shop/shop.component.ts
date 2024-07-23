@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ShopComponent {
   static cartasData = [
     {
-      imagen: '../assets/imagenes/guitars/bcrich.jpg',
+      imagen: './assets/imagenes/guitars/bcrich.jpg',
       nombre: 'Guitarra',
       marca: 'Bc Rich',
       modelo: 'Beast Avenge',
@@ -20,7 +20,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/bcrichstealth.jpg',
+      imagen: './assets/imagenes/guitars/bcrichstealth.jpg',
       nombre: 'Guitarra',
       marca: 'Bc Rich',
       modelo: 'Stealth',
@@ -31,7 +31,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/jacksonjs32.jpg',
+      imagen: './assets/imagenes/guitars/jacksonjs32.jpg',
       nombre: 'Guitarra',
       marca: 'Jackson',
       modelo: 'JS32',
@@ -42,7 +42,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/jacksonsl2mg.jpg',
+      imagen: './assets/imagenes/guitars/jacksonsl2mg.jpg',
       nombre: 'Guitarra',
       marca: 'Jakcson',
       modelo: 'SL2MG',
@@ -53,7 +53,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/deanrazor.jpg',
+      imagen: './assets/imagenes/guitars/deanrazor.jpg',
       nombre: 'Guitarra',
       marca: 'Dean',
       modelo: 'Razorback',
@@ -64,7 +64,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/deanexile.jpg',
+      imagen: './assets/imagenes/guitars/deanexile.jpg',
       nombre: 'Guitarra',
       marca: 'Dean',
       modelo: 'Exile',
@@ -75,7 +75,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/schecterdemon.jpg',
+      imagen: './assets/imagenes/guitars/schecterdemon.jpg',
       nombre: 'Guitarra',
       marca: 'Schecter',
       modelo: 'Demon',
@@ -86,7 +86,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/guitars/schectersunset6.jpg',
+      imagen: './assets/imagenes/guitars/schectersunset6.jpg',
       nombre: 'Guitarra',
       marca: 'Schecter',
       modelo: 'Sunset',
@@ -97,7 +97,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/bass/cort-element.jpg',
+      imagen: './assets/imagenes/bass/cort-element.jpg',
       nombre: 'Bajo',
       marca: 'Cort',
       modelo: 'B5 Element',
@@ -108,7 +108,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/bass/cort-dlx-v.jpg',
+      imagen: './assets/imagenes/bass/cort-dlx-v.jpg',
       nombre: 'Bajo',
       marca: 'Cort',
       modelo: 'DLX V Plus',
@@ -119,7 +119,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/bass/fender-squier.jpg',
+      imagen: './assets/imagenes/bass/fender-squier.jpg',
       nombre: 'Bajo',
       marca: 'Fender',
       modelo: 'Squier',
@@ -130,7 +130,7 @@ export class ShopComponent {
       instrumento: 'cuerdas',
     },
     {
-      imagen: '../assets/imagenes/drums/ludwing-accent-fuse.jpg',
+      imagen: './assets/imagenes/drums/ludwing-accent-fuse.jpg',
       nombre: 'Bateria',
       marca: 'Ludwing',
       modelo: 'Accent Fuse',
@@ -141,7 +141,7 @@ export class ShopComponent {
       instrumento: 'percusion',
     },
     {
-      imagen: '../assets/imagenes/drums/medeli-dd638dx.jpg',
+      imagen: './assets/imagenes/drums/medeli-dd638dx.jpg',
       nombre: 'Bateria Electónica',
       marca: 'Medeli',
       modelo: 'DD638DX',
@@ -152,7 +152,7 @@ export class ShopComponent {
       instrumento: 'percusion',
     },
     {
-      imagen: '../assets/imagenes/vientos/conn-as651.jpg',
+      imagen: './assets/imagenes/vientos/conn-as651.jpg',
       nombre: 'Saxofón',
       marca: 'Conn',
       modelo: 'AS651',
