@@ -311,18 +311,29 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
+    .details-card-after{
+        width: 60%;
+        position: static;
+    }
+}
+
+@media (max-width: 700px){
     .container__payment-details{
         width: 100%;
     }
 
+    .card-after-expiration-date input{
+        font-size: 1rem;
+    }
+
     .payment-details-info-card h3{
         font-size: 2rem;
+        width: 100%;
     }
 
     .details-card-after{
         width: 80%;
-        position: static;
     }
 
     .form-date-cvv{
