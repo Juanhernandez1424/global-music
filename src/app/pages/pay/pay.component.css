@@ -316,15 +316,24 @@
         width: 60%;
         position: static;
     }
+
+    .form-date-cvv{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 700px){
     .container__payment-details{
         width: 100%;
+        padding: 5%;
     }
 
     .card-after-expiration-date input{
         font-size: 1rem;
+    }
+
+    .payment-details-info-card{
+        width: 100%;
     }
 
     .payment-details-info-card h3{
@@ -334,9 +343,5 @@
 
     .details-card-after{
         width: 80%;
-    }
-
-    .form-date-cvv{
-        flex-direction: column;
     }
 }
